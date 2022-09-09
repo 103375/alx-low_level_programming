@@ -1,7 +1,8 @@
-# include <stdio.h>
+#include <stdio.h>
+
 
 /**
-* main - print the string in th put function
+* main - print the string in the put function
 *
 * Description: using the main function
 * this program prints "Programming is like building a multilingual puzzle
@@ -9,6 +10,6 @@
 */
 int main(void)
 {
-	puts ("/"Programing is like building a multilingula puzzle");
+	puts ("/"Programing is like building a multilingual puzzle");
 	return (0);
 }
