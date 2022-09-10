@@ -7,19 +7,21 @@
  * Return: Always success
  */
 int main(void)
-{
-	
-char low, e, q;
 
-e = 'e';
-q = 'q';
+{
+char low;
 
 for (low = 'a'; low <= 'z'; low++)
 {
-	if (low != e && low != q)
-		putchar(low);
+	if (low == 'q')
+		continue;
+
+	else if (low == 'e')
+		continue;
+
+	putchar(low);
 }
-printf("\n");
+putchar ("\n");
 
 return (0);
 }
