@@ -1,99 +1,37 @@
-
-
 #include <stdio.h>
-
-
 /**
-
-
- * main - print possible combination of two 2-digit
-
-
- * numbers
-
-
+ * main - Entry point
  *
-
-
- * Return: returns zero at the end
-
-
+ * Return: Always success
  */
-
-
 int main(void)
-
-
 {
+	int num1, num2;
 
+	for (num1 = 0; num1 <= 98; num1++)
 
-        int i, p;
+	{
 
+	for (num2 = num1 + 1; num2 <= 99; num2++)
 
+	{
 
+	putchar((num1 / 10) + '0');
+	putchar((num1 % 10) + '0');
+	putchar(' ');
+	putchar((num2 / 10) + '0');
+	putchar((num2 % 10) + '0');
 
+	if (num1 == 98 && num == 99)
+	continue;
 
-        for (i = 0; i < 100; i++)
+	putchar(',');
+	putchar(' ');
 
+	}
 
-        {
+	}
 
-
-                for (p = 0; p < 100; j++)
-
-
-                {
-
-
-                        if (p > i)
-
-
-                        {
-
-
-                                putchar((i / 10) + '0');
-
-
-                                putchar((i % 10) + '0');
-
-
-                                putchar(' ');
-
-
-                                putchar((p / 10) + '0');
-
-
-                                putchar((p % 10) + '0');
-
-
-                                if (i != 98)
-
-
-                                {
-
-
-                                        putchar(',');
-
-
-                                        putchar(' ');
-
-
-                                }
-
-
-                        }
-
-
-                }
-
-
-        }
-
-
-        putchar('\n');
-
-
-        return (0);
-
-
+	putchar('\n');
+	return (0);
 }
