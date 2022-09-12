@@ -7,13 +7,15 @@
 int main(void)                                                                                                                          
 {	
 char low;
-for (low = 'a' ; low <= 'z' ; low++)
+char upper;
+
+for (low = 'a'; low <= 'z'; low++)
 {	 
-	putchar(low);
+putchar(low);
 }
-for (low = 'A'; low <= 'Z'; low++)
+for (upper = 'A'; upper <= 'Z'; upper++)
 {
-        putchar(low);
+putchar(upper);
 }
 printf('\n');
 return (0);	 
