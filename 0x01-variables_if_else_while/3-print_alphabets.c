@@ -1,4 +1,4 @@
-#include <stdio>                                                                                                                       
+#include <stdio.h>                                                                                                                       
 /**                                                                                                                                     
  * main - Entry point                                                                                                                   
  *   
@@ -17,6 +17,6 @@ for (upper = 'A'; upper <= 'Z'; upper++)
 {
 putchar(upper);
 }
-printf('\n');
+putchar('\n');
 return (0);	 
 }
