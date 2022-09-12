@@ -1,4 +1,4 @@
-#include <stdio.h.>
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -7,18 +7,19 @@
 int main(void)
 
 {
-char low;
+char alphabet;
 
-for (low = 'a'; low <= 'z'; low++)
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
-	if (low == 'q')
+	if (alphabet == 'q')
 		continue;
 
-	else if (low == 'e')
+	else if (alphabet == 'e')
 		continue;
 
-	putchar(low);
+	putchar (alphabet);
 }
+
 putchar ('\n');
 
 return (0);
