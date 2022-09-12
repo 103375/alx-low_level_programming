@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -6,8 +6,8 @@
  */
 
 int main(void)
-{
-	int a;
+        {
+        int a;
 
 	for (a = 0; a < 10; a++)
 	{
@@ -20,4 +20,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-}
+	}
