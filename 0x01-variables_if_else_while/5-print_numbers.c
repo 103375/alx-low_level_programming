@@ -1,36 +1,23 @@
 #include <stdio.h>
-
-
 /**
-
   * main - Prints the numbers since 0 to 9
-
   *
-
   * Return: Always (Success)
-
   */
-
 int main(void)
 
 {
+        int n;
 
-        char n;
-
-
-        for (n = '0'; n <= '9'; n++)
+        for (n = 0; n < 10; n++)
 
         {
-
-                putchar(n);
-
+                printf("%i", n);
         }
 
+        printf("\n");
 
-        putchar('\n');
-
-
-        return (0);
+                return (0);
 
 }
 
