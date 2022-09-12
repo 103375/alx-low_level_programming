@@ -1,26 +1,15 @@
 #include <stdio.h>
 /**
-  * main - Prints the numbers since 0 to 9
-  *
-  * Return: Always (Success)
-  */
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
-
 {
-        int n;
+	int a;
 
-        for (n = 0; n < 10; n++)
-
-        {
-                printf("%i", n);
-        }
-
-        printf("\n");
-
-                return (0);
-
+	for (a = 0; a < 10; a++)
+		printf("%d", a);
+	putchar('\n');
+	return (0);
 }
-
-
-
-
