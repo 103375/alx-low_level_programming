@@ -1,13 +1,11 @@
 #include "main.h"
 /**
- * main - check the code
+ * print_alphabet_x10 - function to print abc 10 times
  *
- * Return: Always 0
+ * Return: 0
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-	print_alphabet_x10();
-
 	char c, i;
 
 	for (i = 0; i <= 9; i++)
@@ -16,6 +14,6 @@ int main(void)
 		{
 			_putchar(c);
 		}
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
