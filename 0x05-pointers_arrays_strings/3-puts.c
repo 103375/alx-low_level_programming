@@ -1,11 +1,12 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- *_puts - a function that prints a string
- * @str: string input
+ *_puts - prints a string
+ * @str: string to print
  *
- * Description: prints a string
- * Return: void
+ * Description: print a string
+ * On success: returns no error
  */
 
 void _puts(char *str)
@@ -14,8 +15,10 @@ void _puts(char *str)
 
 	while (*(str + i) != '\0')
 	{
-	putchar(*(str + i));
-	i++;
+		putchar(*(str + i));
+		i++;
 	}
 	putchar(10);
 }
+
+
