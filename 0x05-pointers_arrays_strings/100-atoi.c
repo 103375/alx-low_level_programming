@@ -2,7 +2,7 @@
 
 /**
  * _atoi - convert string to an integer
- * @s - Pointer to a character string
+ * @s: Pointer to a character string
  * Return: void
  */
 
@@ -22,12 +22,11 @@ int _atoi(char *s)
 		temp++;
 	}
 	if (*temp != '\0')
-	{ 
+	{
 		do {
 			num = num * 10 + (*temp - '0');
 			temp++;
-		}
-		while (*temp >= '0' && *temp <= '9');
+		} while (*temp >= '0' && *temp <= '9');
 	}
 	return (num * sign);
 }
