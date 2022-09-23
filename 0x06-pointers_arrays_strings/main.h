@@ -23,5 +23,6 @@ int _putchar(char c);
 char *leet(char *);
 char *add_strings(char *n1, char *n2, char *r, int r_index);
 int main(void);
+int main(int argc, char **argv);
 
 #endif /*MAIN_H*/
