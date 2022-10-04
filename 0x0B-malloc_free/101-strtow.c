@@ -4,79 +4,26 @@
 
 int word_count(char *str);
 char *first_word(char *str);
+char **strtow(char *str);
 
 /**
- * **strtow - set memory function
+ * world_len - locates the index marking the end of the
+ *  first word contained within a string.
+ * @str: The string to be searched.
  *
- * @str: pointer to array
- *
- * Return: s
+ * Return: The index marking the end of the initial word pointed to by str.
  */
 
-char **strtow(char *str)
+int word_count(char *str);
 {
-	char **strArr;
-	int wordCount, counter, letter;
+	int index = 0, len = 0;
 
-	if (str == NULL || *str == '\0')
-		return (NULL);
-	wordCount = word_count(str);
-	strArr = (char **)malloc(sizeof(char *) * (wordCount + 1));
-	if (!strArr)
-		return (NULL);
-	for (counter = 0; counter <= wordCount;)
+	while (*(str +  index) && *(str + index) != ' ')
 	{
-		strArr[counter] = (NULL);
-		counter++;
+		len++;
+		index++;
 	}
-	counter = 0;
-	wordCount = 0;
-	letter = 0;
-
-
-	while (str[counter] != '\0')
-	{
-			if (str[counter] != ' ' && !letter)
-			{
-				strArr[wordCount] = first_word(str + wordCount);
-				if (!strArr[counter])
-				{
-					wordCount--;
-					while (wordCount >= 0)
-						free(*(strArr + wordCount--));
-					free(strArr);
-					return (NULL);
-				}
-				wordCount++;
-				letter = 1;
-			}
-			else if (*(str + counter) == ' ' && letter)
-				letter = 0;
-			counter++;
-		if (!wordCount)
-			return (NULL);
-		return (strArr);
-		xif(str[wordCount] != ' ' && !letter);
-		{
-		       strArr[counter] = first_word(str + counter);
-			if (!strArr[counter])
-			{
-				wordCount--;
-				while (wordCount >= 0)
-					free(*(strArr + wordCount--));
-				free(strArr);
-				return (NULL);
-			}
-			wordCount++;
-			letter = 1;
-		}
-		else if (str[counter] == ' ' && letter)
-			letter = 0;
-		counter++;
-	}
-	if (!wordCount)
-		return (NULL);
-	return (strArr);
+	return (len);
 }
 
 /**
