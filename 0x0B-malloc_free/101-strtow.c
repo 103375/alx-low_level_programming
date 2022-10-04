@@ -14,7 +14,7 @@ char **strtow(char *str);
  * Return: The index marking the end of the initial word pointed to by str.
  */
 
-int word_count(char *str);
+int word_count(char *str)
 {
 	int index = 0, len = 0;
 
