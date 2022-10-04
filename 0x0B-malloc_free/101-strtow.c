@@ -32,6 +32,8 @@ char **strtow(char *str)
 	counter = 0;
 	wordCount = 0;
 	letter = 0;
+
+
 	while (str[counter] != '\0')
 	{
 			if (str[counter] != ' ' && !letter)
@@ -54,7 +56,7 @@ char **strtow(char *str)
 		if (!wordCount)
 			return (NULL);
 		return (strArr);
-		xif (str[wordCount] != ' ' && !letter)
+		xif(str[wordCount] != ' ' && !letter)
 		{
 		       strArr[counter] = first_word(str + counter);
 			if (!strArr[counter])
@@ -88,6 +90,7 @@ char **strtow(char *str)
 int word_count(char *str)
 {
 	int counter = 0, wordCount, letter;
+
 	while (str[counter] != '\0')
 	{
 		if (str[counter] != ' ' && !letter)
