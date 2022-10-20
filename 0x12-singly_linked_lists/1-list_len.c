@@ -11,20 +11,12 @@
 
 size_t list_len(const list_t *h)
 {
-	unsigned int index = 0;
-	const list_t *list;
+	size_t elements = 0;
 
-	list = malloc(sizeof(list_t));
-	list = h;
-
-	if (list == NULL)
+	while (h)
 	{
-		return (0);
+		elements++;
+		h = h->next;
 	}
-	while (list != NULL)
-	{
-		list = list->next;
-		index++;
-	}
-	return (index);
+	return (elements);
 }
