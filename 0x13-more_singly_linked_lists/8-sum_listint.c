@@ -8,15 +8,16 @@
  *
  * Return: void
  */
-
 int sum_listint(listint_t *head)
 {
-	unsigned int count = 0;
+	int sum = 0;
+	listint_t *temp = head;
 
-	while (head != NULL)
+	while (temp)
 	{
-		count += head->n;
-		head = head->next;
+		sum += temp->n;
+		temp = temp->next;
 	}
-	return (count);
+	return (sum);
 }
+
