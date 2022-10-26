@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * pop_listint - Remove node from top
+ * pop_listint - deletes the head node
  *
  *@head: pointer to head node
  *
@@ -10,14 +10,15 @@
 
 int pop_listint(listint_t **head)
 {
-	int index = 0;
+	listint_t *temp;
+	int n;
 
-	listint_t *new_node = *head;
-	if (new_node)
-	{
-		index = new_node->n;
-		*head = new_node->next;
-	}
-		free(new_node);
-		return (index);
+	temp = *head;
+
+	if (temp == NULL)
+		return (0);
+	*head = temp->next;
+	n = temp->n;
+	free(temp);
+	return (n);
 }
