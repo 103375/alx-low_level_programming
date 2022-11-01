@@ -3,7 +3,7 @@
 /**
  * append_text_to_file - Appends text to the end of a file.
  * @filename: A pointer to the name of the file.
- * 2text_content: The string to add to the end of the file.
+ * @text_content: The string to add to the end of the file.
  *
  * Return: -1
  */
